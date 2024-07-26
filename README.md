@@ -68,7 +68,7 @@ void loop() {
 ## Code using U8g2
 ```
 #include <U8g2lib.h>
-
+#define OLED_RESET     U8X8_PIN_NONE // Reset pin
 #define OLED_SDA 14                  // D6
 #define OLED_SCL 12                  // D5
 
@@ -94,6 +94,7 @@ void setup() {
 void loop() {
   handle_oled(c);
   c++;
+  delay(1000);
 }
 
 ```
