@@ -6,6 +6,7 @@
 - The HM605 is a very practical and cheap ESP8266 with 0.96 Inch OLED Display.
 - It is sold on all known platforms.
 - Some dealers provide incorrect technical data, which sometimes makes it difficult to get it up and running...
+- be aware that SDA and SCL may be swapped!!!
 
 
 
@@ -15,7 +16,7 @@
 - Address is 0x3C
 
 
-## Code
+## Code using Adafruit_SSD1306
 ```
 #include <Adafruit_SSD1306.h>
 
@@ -63,3 +64,37 @@ void loop() {
 }
 ```
    ![AHT20_BMP280 logo](https://github.com/peff74/esp8266_OLED_HW-364A/blob/main/front_2.jpg)
+
+## Code using U8g2
+```
+#include <U8g2lib.h>
+
+#define OLED_SDA 14                  // D6
+#define OLED_SCL 12                  // D5
+
+U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, OLED_RESET, OLED_SCL, OLED_SDA);
+
+int c = 0;
+
+void handle_oled(int c) {
+  u8g2.clearBuffer();
+  u8g2.setFont(u8g2_font_ncenB08_tr);
+  u8g2.drawStr(0, 10, "Display is working!");
+  u8g2.drawStr(0, 30, "Have fun with it");
+  char buffer[20];
+  snprintf(buffer, sizeof(buffer), "Uptime: %ds", c);
+  u8g2.drawStr(0, 50, buffer);
+  u8g2.sendBuffer();
+}
+
+void setup() {
+  u8g2.begin();
+}
+
+void loop() {
+  handle_oled(c);
+  c++;
+}
+
+```
+![AHT20_BMP280 logo](https://github.com/peff74/esp8266_OLED_HW-364A/blob/main/front_3.jpg)
