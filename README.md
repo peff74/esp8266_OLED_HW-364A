@@ -3,7 +3,7 @@
 ![AHT20_BMP280 logo](https://github.com/peff74/esp8266_OLED_HW-364A/blob/main/back.jpg)
 
 
-- The HM605 is a very practical and cheap ESP8266 with 0.96 Inch OLED Display.
+- The HW-364A / HW-364B is a very practical and cheap ESP8266 with 0.96 Inch OLED Display.
 - It is sold on all known platforms.
 - Some dealers provide incorrect technical data, which sometimes makes it difficult to get it up and running...
 - be aware that SDA and SCL may be swapped!!!
