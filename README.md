@@ -1,4 +1,4 @@
-# HW-364A 
+# HW-364A (USB-C) HW-364B (Micro USB)
 ![AHT20_BMP280 logo](https://github.com/peff74/esp8266_OLED_HW-364A/blob/main/front_1.jpg)
 ![AHT20_BMP280 logo](https://github.com/peff74/esp8266_OLED_HW-364A/blob/main/back.jpg)
 
