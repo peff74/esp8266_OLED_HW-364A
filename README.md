@@ -100,4 +100,23 @@ void loop() {
 ```
 ![AHT20_BMP280 logo](https://github.com/peff74/esp8266_OLED_HW-364A/blob/main/front_3.jpg)
 
+## Quick Tip for Arduino IDE Users  
+Having trouble getting started?  
+Make sure your Arduino IDE settings are dialed in correctly!  
+Check out the screenshot below for the recommended setup:  
+
+![Arduino IDE Settings](https://github.com/peff74/esp8266_OLED_HW-364A/blob/main/IDE_settings.png)  
+
+- **Board**: "Generic ESP8266 Module"  
+- **Port**: Ensure the correct COM port is selected.  
+- **Upload Speed**: "115200"  
+- **Flash Size**: "1MB (FS:64KB OTA:~470KB)"  
+- **Erase Flash**: "Only Sktech"
+
+
+
+These settings should get you up and running.  
+If it still doesn’t work, take a deep breath, re-check everything, and give it another go. 😉
+
+
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fpeff74%2Fesp8266_OLED_HW-364A&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
