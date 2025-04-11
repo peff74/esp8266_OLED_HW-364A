@@ -120,3 +120,4 @@ If it still doesn’t work, take a deep breath, re-check everything, and give it
 
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fpeff74%2Fesp8266_OLED_HW-364A&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+[![Visits Badge](https://badges.pufler.dev/visits/peff74/esp8266_OLED_HW-364A)](https://badges.pufler.dev)
